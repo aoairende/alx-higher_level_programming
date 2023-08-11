@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
 
-    # Import function from calculator_1.py
+    # Import module from calculator_1.py
     from calculator_1 import add, sub, mul, div
 
-    # Assign values for variables a and b
+    # Assign values
     a = 10
     b = 5
 
