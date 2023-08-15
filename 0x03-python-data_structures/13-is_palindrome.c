@@ -14,14 +14,14 @@ int check_palindrome_recursive(listint_t **h, listint_t *n)
 {
 	int i;
 
-	// If the current node is NULL, we have reached the end of the list.
+	/* If the current node is NULL, we have reached the end of the list.*/
 	if (n == NULL)
 		return (1);
 
-	// Recursively call the function for the next node in the list.
+	/* Recursively call the function for the next node in the list.*/
 	i = check_palindrome_recursive(h, n->next);
 
-	// If i is 0, the previous recursive call detected a mismatch, so return 0
+	/* If i is 0, previous recursive call detected a mismatch, so return 0. */
 	if (i == 0)
 		return (0);
 	i = (n->n == (*h)->n);
