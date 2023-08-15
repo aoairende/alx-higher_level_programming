@@ -8,4 +8,4 @@ def delete_at(my_list=[], idx=0):
 
         # Replace the slice at the specified index with an empty list to delete the element.
         del my_list[idx]
-    return my_list
+        return my_list
