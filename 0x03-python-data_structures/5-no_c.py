@@ -7,6 +7,6 @@ def no_c(my_string):
 
     # Iterate through each character in the input string.
     for i in my_string:
-        if i != 'c' and i != 'C': # Check if the character is not 'c' or 'C'.
-            no_c_str += i # Append the character to the filtered string.
+        if i != 'c' and i != 'C':   # Check if the character is not 'c' or 'C'.
+            no_c_str += i   # Append the character to the filtered string.
     return no_c_str
