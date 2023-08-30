@@ -77,6 +77,7 @@ class Square:
             for i in range(self.__position[1]):
                 string += "\n"
             for i in range(self.__size):
-                string += f"{empty if i == 0 else newline}{self.__position[0] * ' '}"
+                string += f"{empty if i == 0 else newline}
+		{self.__position[0] * ' '}"
                 string += f"{self.__size * '#'}"
             return string

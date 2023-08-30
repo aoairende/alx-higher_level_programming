@@ -3,7 +3,7 @@
 
 
 class Square:
-    """Defines a sqaure class"""
+    """Defines a sqaure class """
 
     def __init__(self, size=0):
         """Initialises class instance"""
