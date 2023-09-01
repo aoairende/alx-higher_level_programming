@@ -15,4 +15,4 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     # Convert 'a' and 'b' to integers and return their sum.
-    return int(a) + int(b)
+    return int(a) 
