@@ -4,6 +4,7 @@
 
 class Rectangle:
 
+    """ Class variables to keep track of the number of instances """
     number_of_instances = 0
     print_symbol = "#"
 

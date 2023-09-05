@@ -4,6 +4,7 @@
 
 class Rectangle:
 
+        """ Class variables to keep track of the number of instances """
     number_of_instances = 0
 
     """ Constructor method for Rectangle class """
