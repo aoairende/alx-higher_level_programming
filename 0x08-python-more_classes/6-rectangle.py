@@ -4,8 +4,8 @@
 
 class Rectangle:
 
-        """ Class variables to keep track of the number of instances """
-    number_of_instances = 0
+    """ Class variable to keep track of the number of instances """
+    number of instances = 0
 
     """ Constructor method for Rectangle class """
     def __init__(self, width=0, height=0):
