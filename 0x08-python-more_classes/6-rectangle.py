@@ -3,7 +3,6 @@
 
 
 class Rectangle:
-
     """ Class variable to keep track of the number of instances """
     number of instances = 0
 
