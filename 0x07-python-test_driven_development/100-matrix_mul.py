@@ -4,14 +4,12 @@
 
 
 def get_matrix_sizes(matrix_1, matrix_2, name_1, name_2):
-    '''Computes the size of a matrix and performs some
-    matrix validation.
-    Args:
-        matrix (list): The matrix.
-        name (str): The name of the matrix.
-    Returns:
-        list. The rows and columns of the given matrix.
     '''
+    Computes the size of a matrix and performs some
+    matrix validation.
+    Takes four arguments, matrix_1, matrix_2, name_1 and name_2.
+    '''
+
     funcs = (
         lambda txt: '{} must be a list'.format(txt),
         lambda txt: '{} can\'t be empty'.format(txt),
@@ -54,17 +52,12 @@ def get_matrix_sizes(matrix_1, matrix_2, name_1, name_2):
 
 
 def matrix_mul(m_a, m_b):
-    '''Multiplies 2 matrices.
-    Args:
-        m_a (list): The first matrix.
-        m_b (list): The second matrix.
-    Returns:
-        list: A list of lists of the products of the two given matrices.
-    Raises:
-        ValueError: If m_a's column count isn't equal to m_b's row count.
     '''
+    Multiplies 2 matrices.
+    Takes two arguments: m_a and m_b
+    '''
+
     a_sz, b_sz = get_matrix_sizes(m_a, m_b, 'm_a', 'm_b')
-    # AB only works iff column_count in A == row_count in B
     if a_sz[1] != b_sz[0]:
         raise ValueError('m_a and m_b can\'t be multiplied')
     else:
