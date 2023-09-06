@@ -4,8 +4,10 @@
  * print_python_string - Prints information about Python strings.
  * @p: A PyObject string object.
  */
+
 void print_python_string(PyObject *p)
 {
+	/** Declare a variable to store the length of the Python string.*/
 	long int length;
 
 	fflush(stdout);
@@ -23,6 +25,7 @@ void print_python_string(PyObject *p)
 		printf("  type: compact ascii\n");
 	else
 		printf("  type: compact unicode object\n");
+	/** Print the length of the string.*/
 	printf("  length: %ld\n", length);
 	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &length));
 }
