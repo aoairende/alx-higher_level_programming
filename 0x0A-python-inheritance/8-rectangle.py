@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
-"""Module defines a function"""
+""" Defines a function. """
 
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Defines a geometry class"""
+    """ Implements a rectangle. """
 
     def __init__(self, width, height):
-        """Initialises an instance"""
+        """ Initialises an instance. """
 
         self.integer_validator("width", width)
         self.__width = width

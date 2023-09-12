@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-"""Module defines a class"""
+""" Defines a class. """
 
 
 class MyList(list):
-    """Extends list class"""
+    """ Represents list class MyList. """
 
     def print_sorted(self):
-        """Prints sorted list"""
+        """ Prints the sorted list. """
 
         print(sorted(self))

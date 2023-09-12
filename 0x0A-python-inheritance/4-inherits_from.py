@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 
-"""Module defines a function"""
+""" Defines a function. """
 
 
 def inherits_from(obj, a_class):
-    """checks class instance"""
+    """ Checks class instance inherited
+    obj: an object.
+    a_class: a class.
+    Returns: None
+    """
 
     return issubclass(type(obj), a_class) and type(obj) != a_class

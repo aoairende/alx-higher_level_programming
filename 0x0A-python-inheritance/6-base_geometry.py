@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-"""Module defines a function"""
+""" Defines a function """
 
 
 class BaseGeometry:
-    """Defines a geometry class"""
+    """ Defines a bass geometry class. """
 
     def area(self):
-        """Area of geometry"""
+        """ Area of geometry. """
 
         raise Exception("area() is not implemented")

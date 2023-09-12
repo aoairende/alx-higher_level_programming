@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-"""Module defines a function"""
+""" Defines a function. """
 
 
 class BaseGeometry:
-    """Defines a geometry class"""
+    """ Defines a geometry class. """
 
     pass
