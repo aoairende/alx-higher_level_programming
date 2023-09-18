@@ -52,7 +52,7 @@ class Base:
             if list_objs is None:
                 jsonfile.write("[]")
             else:
-                """ Convert the list of objects to dictionaries and then to JSON """
+                """ Convert the list of objects to dicts and then to JSON"""
                 list_dicts = [o.to_dictionary() for o in list_objs]
                 jsonfile.write(Base.to_json_string(list_dicts))
 
@@ -60,7 +60,7 @@ class Base:
     def from_json_string(json_string):
         """ Returns the deserialization of a JSON string.
         Args:
-            json_string (str): A JSON string representation of a list of dictionaries.
+            json_string (str): A JSON str representation of a list of dicts.
         Returns:
             If json_string is None or empty - an empty list.
             Otherwise - the Python list represented by json_string.
@@ -81,7 +81,7 @@ class Base:
             else:
                 new = cls(1)
             new.update(**dictionary)
-            """ Update the newly created instance with attributes from the dictionary """
+            """Update newly created instance with attributes from dict"""
             return new
 
     @classmethod
@@ -138,7 +138,6 @@ class Base:
                     fieldnames = ["id", "size", "x", "y"]
                 list_dicts = csv.DictReader(csvfile, fieldnames=fieldnames)
                 list_dicts = [dict([k, int(v)] for k, v in d.items())
-                """ Converts data from CSV into dictionaries and create instances. """
                               for d in list_dicts]
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
