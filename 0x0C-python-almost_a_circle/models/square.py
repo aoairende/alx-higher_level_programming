@@ -28,7 +28,7 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
-        """ String represation of square
+        """ String representation of square
         """
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
                                                          self.x,
